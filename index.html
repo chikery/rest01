@@ -31,6 +31,7 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
     <div class="hero-bg-glow glow-1"></div>
     <div class="hero-bg-glow glow-2"></div>
     <div class="hero-inner">
@@ -48,22 +49,21 @@
         <p class="hero-greeting">안녕하세요,</p>
         <h1 class="hero-name">조 윤 서</h1>
         <p class="hero-tagline">
-          비즈니스와 마케팅적 시각으로<br />
-          사용자 경험을 최적화하여 개발하는 <strong>AI 엔지니어</strong>입니다.
+          <span id="typingText"></span><span class="typing-cursor">|</span>
         </p>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-num">97%</span>
+            <span class="stat-num" data-target="97" data-suffix="%">0%</span>
             <span class="stat-label">NLP 분류 정확도</span>
           </div>
           <div class="stat-div"></div>
           <div class="stat">
-            <span class="stat-num">228%</span>
+            <span class="stat-num" data-target="228" data-suffix="%">0%</span>
             <span class="stat-label">캠페인 노출 달성</span>
           </div>
           <div class="stat-div"></div>
           <div class="stat">
-            <span class="stat-num">+22%p</span>
+            <span class="stat-num" data-target="22" data-prefix="+" data-suffix="%p">0%p</span>
             <span class="stat-label">F1 목표 초과</span>
           </div>
         </div>
