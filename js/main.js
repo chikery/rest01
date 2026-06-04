@@ -1,4 +1,63 @@
 /* ============================================================
+   PALETTE & MODE SWITCHER  (가장 먼저 실행 — 깜빡임 방지)
+   ============================================================ */
+(function initTheme() {
+  const html       = document.documentElement;
+  const themeLink  = document.getElementById('themeLink');
+
+  const THEMES = {
+    royal:  { dark: '#070A1A', light: '#F0F5FF', primary: '#3D6FE8' },
+    forest: { dark: '#060F09', light: '#F0FDF4', primary: '#34D399' },
+    ember:  { dark: '#100707', light: '#FFF5F5', primary: '#F87171' },
+    dusk:   { dark: '#08060F', light: '#FAF5FF', primary: '#A78BFA' },
+    noir:   { dark: '#09090A', light: '#FFFBEB', primary: '#F59E0B' },
+  };
+
+  const savedTheme = localStorage.getItem('theme') || 'royal';
+  const savedMode  = localStorage.getItem('mode')  || 'dark';
+
+  function applyTheme(theme, mode) {
+    html.dataset.theme = theme;
+    html.dataset.mode  = mode;
+    themeLink.href     = `css/themes/${theme}.css`;
+    localStorage.setItem('theme', theme);
+    localStorage.setItem('mode',  mode);
+
+    // 팔레트 패널 active 상태 갱신
+    document.querySelectorAll('.swatch').forEach(s =>
+      s.classList.toggle('active', s.dataset.theme === theme)
+    );
+    document.getElementById('modeDark') .classList.toggle('active', mode === 'dark');
+    document.getElementById('modeLight').classList.toggle('active', mode === 'light');
+
+    // 캔버스 색상 갱신 이벤트
+    document.dispatchEvent(new Event('themechanged'));
+  }
+
+  // 초기 적용
+  applyTheme(savedTheme, savedMode);
+
+  // 패널 열기/닫기
+  const trigger = document.getElementById('paletteTrigger');
+  const panel   = document.getElementById('palettePanel');
+  trigger.addEventListener('click', e => {
+    e.stopPropagation();
+    panel.classList.toggle('open');
+  });
+  document.addEventListener('click', () => panel.classList.remove('open'));
+  panel.addEventListener('click', e => e.stopPropagation());
+
+  // 모드 전환
+  document.getElementById('modeDark') .addEventListener('click', () => applyTheme(html.dataset.theme, 'dark'));
+  document.getElementById('modeLight').addEventListener('click', () => applyTheme(html.dataset.theme, 'light'));
+
+  // 팔레트 전환
+  document.querySelectorAll('.swatch').forEach(btn =>
+    btn.addEventListener('click', () => applyTheme(btn.dataset.theme, html.dataset.mode))
+  );
+})();
+
+/* ============================================================
    NAVBAR
    ============================================================ */
 const navbar   = document.getElementById('navbar');
@@ -79,6 +138,20 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   const canvas = document.getElementById('heroCanvas');
   const ctx    = canvas.getContext('2d');
 
+  // CSS 변수에서 색상 읽기
+  function getColors() {
+    const s = getComputedStyle(document.documentElement);
+    return {
+      dot:  `rgba(${s.getPropertyValue('--clr-event-rgb').trim()}, 0.65)`,
+      linkBase: s.getPropertyValue('--clr-primary-rgb').trim(),
+    };
+  }
+  let colors = getColors();
+  document.addEventListener('themechanged', () => {
+    // 테마 CSS 파일이 로드된 후 읽도록 약간 지연
+    setTimeout(() => { colors = getColors(); }, 80);
+  });
+
   const PARTICLE_COUNT = 72;
   const LINK_DIST      = 140;
   const SPEED          = 0.45;
@@ -131,7 +204,7 @@ document.getElementById('contactForm').addEventListener('submit', e => {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(165,180,252,0.7)';
+      ctx.fillStyle = colors.dot;
       ctx.fill();
     }
 
@@ -146,7 +219,7 @@ document.getElementById('contactForm').addEventListener('submit', e => {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(99,102,241,${alpha})`;
+          ctx.strokeStyle = `rgba(${colors.linkBase},${alpha})`;
           ctx.lineWidth = .8;
           ctx.stroke();
         }

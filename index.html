@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-mode="dark" data-theme="royal">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>조윤서 | AI 기획자</title>
+  <link id="themeLink" rel="stylesheet" href="css/themes/royal.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -580,6 +581,68 @@
   <footer class="footer">
     <p>© 2026 조윤서. Designed with passion.</p>
   </footer>
+
+  <!-- ===== PALETTE SWITCHER ===== -->
+  <div class="palette-widget" id="paletteWidget">
+    <div class="palette-panel" id="palettePanel">
+
+      <!-- Dark / Light 토글 -->
+      <div class="mode-toggle">
+        <button class="mode-btn active" id="modeDark">🌙 다크</button>
+        <button class="mode-btn" id="modeLight">☀️ 라이트</button>
+      </div>
+
+      <!-- 컬러 팔레트 -->
+      <p class="palette-label">Color Palette</p>
+      <div class="swatch-row">
+
+        <button class="swatch active" data-theme="royal">
+          <span class="swatch-pair">
+            <span style="background:#070A1A"></span>
+            <span style="background:#3D6FE8"></span>
+          </span>
+          <span class="swatch-name">Royal</span>
+        </button>
+
+        <button class="swatch" data-theme="forest">
+          <span class="swatch-pair">
+            <span style="background:#060F09"></span>
+            <span style="background:#34D399"></span>
+          </span>
+          <span class="swatch-name">Forest</span>
+        </button>
+
+        <button class="swatch" data-theme="ember">
+          <span class="swatch-pair">
+            <span style="background:#100707"></span>
+            <span style="background:#F87171"></span>
+          </span>
+          <span class="swatch-name">Ember</span>
+        </button>
+
+        <button class="swatch" data-theme="dusk">
+          <span class="swatch-pair">
+            <span style="background:#08060F"></span>
+            <span style="background:#A78BFA"></span>
+          </span>
+          <span class="swatch-name">Dusk</span>
+        </button>
+
+        <button class="swatch" data-theme="noir">
+          <span class="swatch-pair">
+            <span style="background:#09090A"></span>
+            <span style="background:#F59E0B"></span>
+          </span>
+          <span class="swatch-name">Noir</span>
+        </button>
+
+      </div>
+    </div>
+
+    <button class="palette-trigger" id="paletteTrigger" aria-label="컬러 테마 변경">
+      🎨
+    </button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,47 @@
+/* ================================================================
+   NOIR — 다크차콜 / 골드
+   Primary  : Amber Gold
+   Event    : Light Gold
+   ================================================================ */
+
+[data-mode="dark"] {
+  --clr-primary:     #F59E0B;
+  --clr-primary-d:   #D97706;
+  --clr-primary-rgb: 245, 158, 11;
+  --clr-event:       #FDE68A;
+  --clr-event-rgb:   253, 230, 138;
+
+  --clr-bg:          #09090A;
+  --clr-bg-alt:      #111110;
+  --clr-bg-hero:     #161410;
+  --clr-bg-nav:      rgba(9, 9, 10, .90);
+  --clr-bg-mob-nav:  rgba(9, 9, 10, .97);
+  --clr-surface:     #1A1916;
+  --clr-surface2:    #22201C;
+  --clr-heading:     #FFFBEB;
+  --clr-text:        #FEF3C7;
+  --clr-muted:       #A09060;
+  --clr-border:      #34301A;
+  --glow:            0 0 40px rgba(245, 158, 11, .20);
+}
+
+[data-mode="light"] {
+  --clr-primary:     #B45309;
+  --clr-primary-d:   #92400E;
+  --clr-primary-rgb: 180, 83, 9;
+  --clr-event:       #D97706;
+  --clr-event-rgb:   217, 119, 6;
+
+  --clr-bg:          #FFFBEB;
+  --clr-bg-alt:      #FEF3C7;
+  --clr-bg-hero:     #FDE68A;
+  --clr-bg-nav:      rgba(255, 251, 235, .92);
+  --clr-bg-mob-nav:  rgba(255, 251, 235, .98);
+  --clr-surface:     #FFFFFF;
+  --clr-surface2:    #FFFCF0;
+  --clr-heading:     #1C1409;
+  --clr-text:        #292008;
+  --clr-muted:       #6B5020;
+  --clr-border:      #E8D090;
+  --glow:            0 0 30px rgba(180, 83, 9, .14);
+}

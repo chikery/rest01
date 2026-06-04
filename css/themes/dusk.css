@@ -1,0 +1,47 @@
+/* ================================================================
+   DUSK — 다크퍼플 / 라벤더
+   Primary  : Violet
+   Event    : Lavender
+   ================================================================ */
+
+[data-mode="dark"] {
+  --clr-primary:     #A78BFA;
+  --clr-primary-d:   #8B5CF6;
+  --clr-primary-rgb: 167, 139, 250;
+  --clr-event:       #C4B5FD;
+  --clr-event-rgb:   196, 181, 253;
+
+  --clr-bg:          #08060F;
+  --clr-bg-alt:      #100A1C;
+  --clr-bg-hero:     #120E22;
+  --clr-bg-nav:      rgba(8, 6, 15, .90);
+  --clr-bg-mob-nav:  rgba(8, 6, 15, .97);
+  --clr-surface:     #18102C;
+  --clr-surface2:    #221838;
+  --clr-heading:     #FAF5FF;
+  --clr-text:        #EDE9FE;
+  --clr-muted:       #8B78B8;
+  --clr-border:      #2C1F50;
+  --glow:            0 0 40px rgba(167, 139, 250, .20);
+}
+
+[data-mode="light"] {
+  --clr-primary:     #6D28D9;
+  --clr-primary-d:   #5B21B6;
+  --clr-primary-rgb: 109, 40, 217;
+  --clr-event:       #7C3AED;
+  --clr-event-rgb:   124, 58, 237;
+
+  --clr-bg:          #FAF5FF;
+  --clr-bg-alt:      #F3E8FF;
+  --clr-bg-hero:     #E9D5FF;
+  --clr-bg-nav:      rgba(250, 245, 255, .92);
+  --clr-bg-mob-nav:  rgba(250, 245, 255, .98);
+  --clr-surface:     #FFFFFF;
+  --clr-surface2:    #F9F5FF;
+  --clr-heading:     #1E0A3C;
+  --clr-text:        #2E1065;
+  --clr-muted:       #5B3A8A;
+  --clr-border:      #D8B4FE;
+  --glow:            0 0 30px rgba(109, 40, 217, .14);
+}
