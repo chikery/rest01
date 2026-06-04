@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280">
+  <rect width="280" height="280" fill="#1e293b"/>
+  <circle cx="140" cy="100" r="50" fill="#334155"/>
+  <ellipse cx="140" cy="220" rx="80" ry="60" fill="#334155"/>
+  <text x="140" y="265" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b">프로필 사진</text>
+</svg>

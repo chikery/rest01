@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>조윤서 | AI 기획자</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">조윤서</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#competency">핵심역량</a></li>
+        <li><a href="#skills">기술스택</a></li>
+        <li><a href="#experience">경력/교육</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-inner">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="assets/images/profile.jpg" alt="조윤서 프로필 사진" />
+        </div>
+        <div class="hero-badges">
+          <span class="badge badge-blue">AI · NLP</span>
+          <span class="badge badge-purple">기획 · 운영</span>
+          <span class="badge badge-teal">데이터 · 마케팅</span>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">안녕하세요,</p>
+        <h1 class="hero-name">조 윤 서</h1>
+        <p class="hero-tagline">
+          비즈니스와 마케팅적 시각으로<br />
+          사용자 경험을 최적화하여 개발하는 <strong>AI 엔지니어</strong>입니다.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">97%</span>
+            <span class="stat-label">NLP 분류 정확도</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">228%</span>
+            <span class="stat-label">캠페인 노출 달성</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">+22%p</span>
+            <span class="stat-label">F1 목표 초과</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">연락하기</a>
+          <a href="assets/조윤서_이력서_v4.pdf" class="btn btn-outline" target="_blank">이력서 PDF</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="스크롤">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">소개 <span class="accent">About</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            팀이 방향을 잃을 때 가장 먼저 구조를 그려왔습니다.<br />
+            아모레퍼시픽 챌린지에서 6인 팀장으로 <strong>AARRR × 페르소나 의사결정 구조</strong>를 직접 설계했고,
+            NLP 분류 모델에서는 목표 F1을 22%p 초과했으며,
+            마케팅 캠페인에서는 목표 노출을 <strong>228% 달성</strong>했습니다.
+          </p>
+          <p>
+            AI 기술과 운영 실행력을 동시에 갖춘 사람으로,
+            분석에서 그치지 않고 <strong>실제 사업이 굴러가게 만드는 역할</strong>로 즉시 기여합니다.
+          </p>
+        </div>
+        <ul class="about-info">
+          <li>
+            <span class="info-icon">🎂</span>
+            <span class="info-label">생년월일</span>
+            <span>1998.05.24</span>
+          </li>
+          <li>
+            <span class="info-icon">📱</span>
+            <span class="info-label">전화</span>
+            <a href="tel:010-5001-1944">010-5001-1944</a>
+          </li>
+          <li>
+            <span class="info-icon">✉</span>
+            <span class="info-label">이메일</span>
+            <a href="mailto:yunseo.ys.cho@gmail.com">yunseo.ys.cho@gmail.com</a>
+          </li>
+          <li>
+            <span class="info-icon">📍</span>
+            <span class="info-label">위치</span>
+            <span>서울시 강동구</span>
+          </li>
+          <li>
+            <span class="info-icon">🎓</span>
+            <span class="info-label">학력</span>
+            <span>중앙대학교 사진학과 (GPA 4.00/4.5)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORE COMPETENCY ===== -->
+  <section class="section section-alt" id="competency">
+    <div class="container">
+      <h2 class="section-title">핵심역량 <span class="accent">Core Competency</span></h2>
+      <div class="comp-grid">
+
+        <div class="comp-card">
+          <div class="comp-icon">🤖</div>
+          <h3>인재 매칭 · AI</h3>
+          <p>한국어 텍스트 분류·RAG·LLM 파이프라인 직접 설계 및 수치 검증</p>
+          <div class="comp-tag">분류 정확도 97%+</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon">📋</div>
+          <h3>운영 · 실행</h3>
+          <p>6개 프로젝트 팀장 — WBS 일정관리, 기획서 문서화, 행사 기획·운영</p>
+          <div class="comp-tag">아모레퍼시픽 AI Challenge 특별상</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon">📊</div>
+          <h3>데이터 · 성장</h3>
+          <p>Meta 광고 A/B 테스트 · GA4·GTM 퍼널 구축 · Looker Studio 대시보드</p>
+          <div class="comp-tag">노출 228% 달성</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-icon">🌐</div>
+          <h3>글로벌</h3>
+          <p>TOEFL IBT 102 / 독일 바우하우스대학교 교환학생 · 어학연수</p>
+          <div class="comp-tag">영어 기반 다국적 협업</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">기술 스택 <span class="accent">Tech Stack</span></h2>
+      <div class="skills-section">
+
+        <div class="skill-group">
+          <h3><span class="skill-group-icon">🧠</span> AI · NLP</h3>
+          <div class="tag-list">
+            <span>PyTorch</span>
+            <span>HuggingFace Transformers</span>
+            <span>PEFT/LoRA</span>
+            <span>DPO</span>
+            <span>RAG</span>
+            <span>FAISS</span>
+            <span>LangChain</span>
+            <span>Pydantic</span>
+            <span>Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-group-icon">⚙️</span> 백엔드 · 인프라</h3>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>JWT</span>
+            <span>Cloudflare Tunnel</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>Sentry</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-group-icon">📈</span> 마케팅 · 분석</h3>
+          <div class="tag-list">
+            <span>Meta Ads</span>
+            <span>GA4</span>
+            <span>GTM</span>
+            <span>Looker Studio</span>
+            <span>A/B Test</span>
+            <span>W&B</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group cert-group">
+          <h3><span class="skill-group-icon">🏅</span> 자격증 · 어학</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-name">ADsP</span>
+              <span class="cert-score">데이터분석준전문가</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-name">OPIc</span>
+              <span class="cert-score">AL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE & EDUCATION ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">경력 / 교육 <span class="accent">Experience</span></h2>
+
+      <div class="exp-tabs">
+        <button class="exp-tab active" data-target="tab-edu">교육이수</button>
+        <button class="exp-tab" data-target="tab-academic">학력</button>
+        <button class="exp-tab" data-target="tab-activity">대외활동</button>
+        <button class="exp-tab" data-target="tab-award">수상</button>
+      </div>
+
+      <!-- 교육이수 -->
+      <div class="tab-content active" id="tab-edu">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2026.03 — 2026.04</span>
+              <h3 class="timeline-role">AI 엔지니어 인턴십 (로켓단)</h3>
+              <p class="timeline-org">멋쟁이사자처럼</p>
+              <ul class="timeline-desc">
+                <li>강의 STT 스크립트 기반 AI 복습 퀴즈 &amp; 학습 가이드 자동 생성 시스템 개발</li>
+                <li>tiktoken 청킹·하이브리드 임베딩(OpenAI + ko-sroberta)·FAISS RAG 파이프라인 구현</li>
+                <li>FastAPI + PostgreSQL 백엔드 구축 (JWT 인증·Cloudflare Tunnel·Grafana/Prometheus 모니터링)</li>
+                <li>React 모바일 앱 UI 구현 및 백엔드 API 연동</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2025.12 — 2026.02</span>
+              <h3 class="timeline-role">AI NLP 부트캠프 수료</h3>
+              <p class="timeline-org">멋쟁이사자처럼</p>
+              <ul class="timeline-desc">
+                <li>한국어 NLP Multi-label 분류 모델 실험 (klue/roberta-base, koelectra-base-v3 등 5종 비교)</li>
+                <li>Focal Loss·Soft BCE·ASL 손실함수 설계 및 OOD 평가셋 10,000개 자체 구축</li>
+                <li><strong>Macro F1 0.9748 달성</strong> (목표 0.75 대비 +22.48%p) / W&amp;B 실험 관리</li>
+                <li>NL2SQL 시스템 구축 — KoELECTRA + SQLCoder 2단계 파이프라인, <strong>EM 97.47%</strong> 달성</li>
+                <li>Retriever-Reranker-Generator 3단계 아키텍처 및 Column-Level Dense Retrieval 구현</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2025.08 — 2025.12</span>
+              <h3 class="timeline-role">그로스마케팅 부트캠프 수료</h3>
+              <p class="timeline-org">멋쟁이사자처럼</p>
+              <ul class="timeline-desc">
+                <li>데이터 기반 마케팅 의사결정·퍼널 분석·마케팅 대시보드 설계</li>
+                <li>Meta 광고 기획·집행 및 A/B 테스트, GA4·GTM 이벤트 트래킹 환경 구축</li>
+                <li>기업 비즈니스 연계 마케팅 프로젝트 2회 수행 (팀장)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 학력 -->
+      <div class="tab-content" id="tab-academic">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2018.03 — 2026.02</span>
+              <h3 class="timeline-role">사진학과 졸업</h3>
+              <p class="timeline-org">중앙대학교</p>
+              <ul class="timeline-desc">
+                <li>사진전공, 예술·영상 미디어·브랜드 비주얼 커뮤니케이션 경험</li>
+                <li>학점 <strong>4.00 / 4.5</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2022.04 — 2022.09</span>
+              <h3 class="timeline-role">디지털 아트 교환학생</h3>
+              <p class="timeline-org">독일 바우하우스대학교</p>
+              <ul class="timeline-desc">
+                <li>NFT·디지털 아트 기반 실험적 작품 제작, Blender·Unity 활용 3D 모델링 및 AR 프로젝트</li>
+                <li>영어·독일어 기반 다국적 팀 프로젝트 참여, 글로벌 커뮤니케이션 역량 강화</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2022.10 — 2023.02</span>
+              <h3 class="timeline-role">독일 어학연수</h3>
+              <p class="timeline-org">독일</p>
+              <ul class="timeline-desc">
+                <li>독일어·영어 기반 현지 생활 커뮤니케이션, 글로벌 소비자 문화 이해</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 대외활동 -->
+      <div class="tab-content" id="tab-activity">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2024.10 — 2026.03</span>
+              <h3 class="timeline-role">청년예술가 지원공간 사각사각 플레이스 입주작가</h3>
+              <p class="timeline-org">서울시 미래한강본부</p>
+              <ul class="timeline-desc">
+                <li>한강 페스티벌 단독 부스 2회 기획·운영 (2024, 2025 한강 가을 페스티벌·사각사각 가을축제)</li>
+                <li>참여자 300명, 체험형 포토상품 기획·제작</li>
+                <li>참여자 행동 데이터(A/B테스트·체류시간·세그먼트) 수집·분석 및 개선 전략 수립</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2025.04 — 2025.08</span>
+              <h3 class="timeline-role">아트비즈니스 챌린지</h3>
+              <p class="timeline-org">예술경영지원센터</p>
+              <ul class="timeline-desc">
+                <li>창업 아이디어 검증부터 시장 조사·SWOT 분석·A/B 테스트·로드맵 설계 등 스타트업 기획 전 과정</li>
+                <li>투자자 대상 IR 피칭 시연, 상위 50% 팀 선정</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 수상 -->
+      <div class="tab-content" id="tab-award">
+        <div class="award-card">
+          <div class="award-icon">🏆</div>
+          <div class="award-info">
+            <span class="award-date">2026.01</span>
+            <h3 class="award-title">아모레퍼시픽 AI Innovation Challenge 2026 — 특별상</h3>
+            <p class="award-desc">
+              AGENT10 CRM 메시지 자동 제작 프로젝트 · 6인 팀장, 기획 리드 및 AI 파이프라인 설계
+            </p>
+            <ul class="award-details">
+              <li>6인 팀장으로 AARRR × 페르소나 의사결정 구조 설계 + AI 파이프라인 연결</li>
+              <li>Qwen2.5-1.5B(초안) + EXAONE-4.0-1.2B(톤 보정) 이원화 멀티 에이전트 파이프라인 구현</li>
+              <li>DPO + LoRA 파인튜닝으로 페르소나 유출·한영 혼용 문제 해결</li>
+              <li>처리 시간 <strong>39초 → 19초 (50% 단축)</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">프로젝트 <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.12 — 2026.01</span>
+            <span class="project-role-badge">팀장 · 기획 · AI</span>
+          </div>
+          <h3>아모레퍼시픽 AI Innovation Challenge</h3>
+          <p class="project-sub">CRM 메시지 자동 제작 시스템</p>
+          <p class="project-desc">
+            브랜드별 메시지 품질 불균일 문제를 해결하기 위해 아모레 5대 브랜드의 페르소나와 구매 여정(AARRR)을 분석해
+            3단계 의사결정 구조를 설계하고 멀티 에이전트 파이프라인으로 구현.
+          </p>
+          <div class="project-metric">
+            <span>⏱ 처리 시간 50% 단축</span>
+            <span>🏆 특별상 수상</span>
+          </div>
+          <div class="project-tags">
+            <span>LLM</span><span>LoRA/DPO</span><span>Multi-Agent</span><span>기획</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.12 — 2026.02</span>
+            <span class="project-role-badge">AI 엔지니어</span>
+          </div>
+          <h3>AI 응답 품질 자동 평가 시스템</h3>
+          <p class="project-sub">Multi-label Binary Classification</p>
+          <p class="project-desc">
+            AI 응답 9가지 품질 기준을 동시에 분류하는 Multi-label 문제. Pair Tokenization으로 TN=0 문제를 해결해
+            TN을 8,586까지 끌어올리고, OOD 평가셋 10,000개를 자체 설계해 일반화 성능 검증.
+          </p>
+          <div class="project-metric">
+            <span>📊 Macro F1 0.9748</span>
+            <span>🎯 목표 대비 +22.48%p</span>
+          </div>
+          <div class="project-tags">
+            <span>klue/roberta</span><span>Focal Loss</span><span>ASL</span><span>W&B</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.12 — 2026.02</span>
+            <span class="project-role-badge">AI 엔지니어</span>
+          </div>
+          <h3>NL2SQL 시스템 구축</h3>
+          <p class="project-sub">한국어 자연어 → SQL 파이프라인</p>
+          <p class="project-desc">
+            KoELECTRA로 테이블·컬럼 검색(Retriever), E5-Korean 기반 Column-Level Dense Retrieval + Contrastive Learning,
+            SQLCoder 쿼리 생성 3단계 구조. LLM 할루시네이션은 Top-1 Table Isolation 전략으로 억제.
+          </p>
+          <div class="project-metric">
+            <span>✅ EM 97.47%</span>
+            <span>🔍 비전공자도 자연어 조회</span>
+          </div>
+          <div class="project-tags">
+            <span>KoELECTRA</span><span>SQLCoder</span><span>RAG</span><span>Contrastive Learning</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.10 — 2026.01</span>
+            <span class="project-role-badge">기획팀장 · AI</span>
+          </div>
+          <h3>또바바</h3>
+          <p class="project-sub">쇼핑 의사결정 AI 서비스</p>
+          <p class="project-desc">
+            콜드 스타트 없이 충동구매 위험도를 0~100점으로 정량화한 AI 심리 개입 시스템.
+            비선형 자극 모델(Gaussian Peak)로 구매 압박감을 점수화, BRAKE/DECIDER 모드 자동 전환.
+          </p>
+          <div class="project-metric">
+            <span>🧠 듀얼 스코어링 알고리즘</span>
+            <span>📱 모바일 앱</span>
+          </div>
+          <div class="project-tags">
+            <span>LLM</span><span>FastAPI</span><span>React</span><span>심리모델</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.10 — 2025.11</span>
+            <span class="project-role-badge">팀장 · 광고</span>
+          </div>
+          <h3>여고생과 리셋중 사전예약 전환 캠페인</h3>
+          <p class="project-sub">RPG 게임 마케팅</p>
+          <p class="project-desc">
+            페르소나 설정 및 타겟별 A/B 광고 소재 12종 직접 제작 및 Meta 광고 집행.
+            GA4 + GTM 코드 삽입으로 퍼널 트래킹 환경 구축, 전환 데이터 수집 및 분석.
+          </p>
+          <div class="project-metric">
+            <span>📱 소재 12종 A/B 테스트</span>
+            <span>📈 전환 퍼널 구축</span>
+          </div>
+          <div class="project-tags">
+            <span>Meta Ads</span><span>GA4</span><span>GTM</span><span>A/B Test</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-period">2025.09 — 2025.10</span>
+            <span class="project-role-badge">팀장 · 분석</span>
+          </div>
+          <h3>케밋 브랜드 인지도 제고 캠페인</h3>
+          <p class="project-sub">Instagram 광고 마케팅</p>
+          <p class="project-desc">
+            Instagram 4종 광고소재 제작, A/B 테스트 설계 및 집행.
+            고효율 소재 기반 신규 소재 추가 제작 및 예산 재배분 최적화.
+            CPM·CTR·CPC 지표 분석 및 Looker Studio 대시보드 제작.
+          </p>
+          <div class="project-metric">
+            <span>🚀 노출 228% 달성</span>
+            <span>📊 3만 → 9.8만 노출</span>
+          </div>
+          <div class="project-tags">
+            <span>Instagram Ads</span><span>Looker Studio</span><span>A/B Test</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">연락처 <span class="accent">Contact</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">함께 일하고 싶으시다면 언제든지 연락 주세요.</p>
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <p class="contact-label">이메일</p>
+              <a href="mailto:yunseo.ys.cho@gmail.com">yunseo.ys.cho@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <p class="contact-label">전화</p>
+              <a href="tel:010-5001-1944">010-5001-1944</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📄</span>
+            <div>
+              <p class="contact-label">이력서</p>
+              <a href="assets/조윤서_이력서_v4.pdf" target="_blank">PDF 다운로드</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="sender-name">이름</label>
+            <input type="text" id="sender-name" name="name" placeholder="보내는 분 이름" required />
+          </div>
+          <div class="form-group">
+            <label for="sender-email">이메일</label>
+            <input type="email" id="sender-email" name="email" placeholder="이메일 주소" required />
+          </div>
+          <div class="form-group">
+            <label for="message">메시지</label>
+            <textarea id="message" name="message" rows="5" placeholder="메시지를 입력해 주세요" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">메시지 보내기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 조윤서. Designed with passion.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
